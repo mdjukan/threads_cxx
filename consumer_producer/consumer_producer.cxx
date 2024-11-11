@@ -6,9 +6,6 @@
 #include <iostream>
 #include <condition_variable>
 
-//ovo je odlicno za prvu verziju
-//
-
 using Message = std::string;
 using ID = int;
 
