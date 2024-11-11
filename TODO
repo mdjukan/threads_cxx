@@ -1,0 +1,14 @@
+std::vector<std::string> all_messages{"bla", "blaa", ...};
+std::queue<std::string> messages; //potrebno je postaviti ogranicenje na kapacitet reda
+std::mutex mtx;
+std::condition_variable cv1; //da li mi je jedan condition variable dovoljna
+//producer ceka ako nema dovoljno proizvod
+//consumer ceka ako u redu nema dovljno mesta
+//potrebno su mu dva condition_variable -> da li je to standardan nacim implementacije
+//consumer producera
+
+[producer] message generator
+//queue_is_full -> ovako se ne imenuju condition variables -> mozda
+
+[cnsumer] message printer
+//queue_is_empty ->
